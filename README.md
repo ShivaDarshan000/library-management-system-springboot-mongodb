@@ -21,7 +21,7 @@ A simple **Library Management System** built using:
 
 ## 🧠 Folder Structure
 
-'''
+```
 library/
 ├── src/
 │ ├── main/
@@ -38,4 +38,4 @@ library/
 │ │ └── application.properties
 ├── pom.xml
 └── README.md
-'''
+```

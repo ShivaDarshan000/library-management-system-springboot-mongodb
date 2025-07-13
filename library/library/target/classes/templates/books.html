@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Library Books</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>📚 Library Books</h1>
+
+    <a href="/add" class="btn">➕ Add New Book</a>
+
+    <div class="book-list">
+        <div class="book-card" th:each="book : ${books}">
+            <h3 th:text="${book.title}">Book Title</h3>
+            <p><strong>Author:</strong> <span th:text="${book.author}"></span></p>
+            <p><strong>Status:</strong> <span th:text="${book.status}"></span></p>
+            <a th:href="@{'/delete/' + ${book.id}}" class="btn delete">❌ Delete</a>
+        </div>
+    </div>
+</body>
+</html>

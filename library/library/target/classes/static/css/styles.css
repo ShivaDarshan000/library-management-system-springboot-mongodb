@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.book-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.book-card h3 {
+    margin-top: 0;
+    color: #2e86de;
+}
+
+.book-card p {
+    margin: 5px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2e86de;
+    color: white;
+    padding: 8px 16px;
+    margin: 10px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #1b5da2;
+}
+
+.btn.delete {
+    background-color: #e74c3c;
+}
+
+.btn.delete:hover {
+    background-color: #c0392b;
+}
+
+.btn.back {
+    background-color: #0c9be8;
+}
+
+.form input {
+    width: 300px;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.btn {
+    border: none;
+    cursor: pointer;
+}
